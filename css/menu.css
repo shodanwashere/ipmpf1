@@ -1,0 +1,43 @@
+.grid-container{
+    margin: 180px;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: auto auto auto;
+    gap: 100px;
+    padding: 0px;
+}
+
+.menu-button{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    background-color: white;
+    border-radius: 12px;
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 10em;
+    height: 4.5em;
+    transition: width 1s, height 1s, background-color 1s, color 1s;
+}
+
+.menu-button:hover{
+    width: 12em;
+    height: 6em;
+    background-color: black;
+    color: white;
+}
+
+.menu-button > img {
+    height: 6rem;
+    width: auto;
+    
+}
+
+.grid-container > a {
+    background-color: white;
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: none;
+  }
