@@ -16,4 +16,4 @@ function decreaseTemp(id){
     tempLabel.textContent = temp.toString();
 }
 
-// implement way to add event listeners to all the buttons
+// TODO: implement way to add event listeners to all the buttons
