@@ -13,23 +13,17 @@
         <div class="main-section">
             <div class="child-titlebar">
                 <img src="../img/icons/temps.png" alt="">
-                <h2><a id="breadcrumb" href="./index.html">Temperaturas</a></h2>
+                <h2><a id="breadcrumb" href="./index.html">Temperaturas</a> > <a id="breadcrumb" href="./index.html/interior.html">Interior</a></h2>
                 <a href="../index.html" class="btn-goback">
                     < Voltar ao Menu Principal
                 </a>
             </div>
-            <ul class="imaged-list">
-                <li id="imaged-list-item">
-                    <a href="./interior.html">
-                        <img src="../img/temps/interior.png" alt="">
-                        Interior
-                    </a>
-                </li>
-                <li id="imaged-list-item">
-                    <a href="./exterior.html">
-                        <img src="../img/temps/exterior.png" alt="">
-                        Exterior
-                    </a>
+            <ul id="temps-menu-interior">
+                <li>
+                    Entrada: 
+                    <input type="button" id="dec" value="-">
+                    <span id="temp">15</span>ºC
+                    <input type="button" id="inc" value="+">
                 </li>
             </ul>
         </div>
@@ -41,6 +35,8 @@
     </script>
     <script>
         topbarInit();
+    </script>
+    <script src="../js/temps_behavior.js">
     </script>
 </body>
 </html>

@@ -19,12 +19,10 @@
     padding-bottom: 20px;
     width: 10em;
     height: 4.5em;
-    transition: width 1s, height 1s, background-color 1s, color 1s;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 .menu-button:hover{
-    width: 12em;
-    height: 6em;
     background-color: black;
     color: white;
 }
