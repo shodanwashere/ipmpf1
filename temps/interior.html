@@ -4,6 +4,8 @@
     <title>Smart House</title>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/child.css">
+    <script src="../js/temps_behavior.js">
+    </script>
 </head>
 <body>
     <div class="top-bar">
@@ -13,19 +15,77 @@
         <div class="main-section">
             <div class="child-titlebar">
                 <img src="../img/icons/temps.png" alt="">
-                <h2><a id="breadcrumb" href="./index.html">Temperaturas</a> > <a id="breadcrumb" href="./index.html/interior.html">Interior</a></h2>
+                <h2><a id="breadcrumb" href="./index.html">Temperaturas</a> > <a id="breadcrumb" href="./interior.html">Interior</a></h2>
                 <a href="../index.html" class="btn-goback">
                     < Voltar ao Menu Principal
                 </a>
             </div>
             <ul id="temps-menu-interior">
-                <li>
+                <li class="temp-entry">
                     Entrada: 
-                    <input type="button" id="dec" value="-">
-                    <span id="temp">15</span>ºC
-                    <input type="button" id="inc" value="+">
+                    <input type="button" class="dec" value="-" onclick="decreaseTemp(0)">
+                    <span class="temp">15</span>ºC
+                    <input type="button" class="inc" value="+" onclick="increaseTemp(0)">
+                </li>
+                <li class="temp-entry">
+                    Cozinha: 
+                    <input type="button" class="dec" value="-" onclick="decreaseTemp(1)">
+                    <span class="temp">15</span>ºC
+                    <input type="button" class="inc" value="+" onclick="increaseTemp(1)">
+                </li>
+                <li class="temp-entry">
+                    Sala de Estar: 
+                    <input type="button" class="dec" value="-" onclick="decreaseTemp(2)">
+                    <span class="temp">16</span>ºC
+                    <input type="button" class="inc" value="+" onclick="increaseTemp(2)">
+                </li>
+                <li class="temp-entry">
+                    Sala de Jantar: 
+                    <input type="button" class="dec" value="-" onclick="decreaseTemp(3)">
+                    <span class="temp">16</span>ºC
+                    <input type="button" class="inc" value="+" onclick="increaseTemp(3)">
+                </li>
+                <li class="temp-entry">
+                    Quarto 1: 
+                    <input type="button" class="dec" value="-" onclick="decreaseTemp(4)">
+                    <span class="temp">18</span>ºC
+                    <input type="button" class="inc" value="+" onclick="increaseTemp(4)">
+                </li>
+                <li class="temp-entry">
+                    Quarto 2: 
+                    <input type="button" class="dec" value="-" onclick="decreaseTemp(5)">
+                    <span class="temp">19</span>ºC
+                    <input type="button" class="inc" value="+" onclick="increaseTemp(5)">
+                </li>
+                <li class="temp-entry">
+                    Quarto 3: 
+                    <input type="button" class="dec" value="-" onclick="decreaseTemp(6)">
+                    <span class="temp">20</span>ºC
+                    <input type="button" class="inc" value="+" onclick="increaseTemp(6)">
+                </li>
+                <li class="temp-entry">
+                    Casa de Banho 1: 
+                    <input type="button" class="dec" value="-" onclick="decreaseTemp(7)">
+                    <span class="temp">20</span>ºC
+                    <input type="button" class="inc" value="+" onclick="increaseTemp(7)">
+                </li>
+                <li class="temp-entry">
+                    Casa de Banho 2: 
+                    <input type="button" class="dec" value="-" onclick="decreaseTemp(8)">
+                    <span class="temp">15</span>ºC
+                    <input type="button" class="inc" value="+" onclick="increaseTemp(8)">
+                </li>
+                <li class="temp-entry">
+                    Garagem: 
+                    <input type="button" class="dec" value="-" onclick="decreaseTemp(9)">
+                    <span class="temp">13</span>ºC
+                    <input type="button" class="inc" value="+" onclick="increaseTemp(9)">
                 </li>
             </ul>
+
+            <button class="btn-goback" onclick="toggleThermostats()">
+                Ligar/Desligar os Termostatos
+            </button>
         </div>
         
     </div>
@@ -35,8 +95,7 @@
     </script>
     <script>
         topbarInit();
-    </script>
-    <script src="../js/temps_behavior.js">
+        startup();
     </script>
 </body>
 </html>
