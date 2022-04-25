@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Smart House</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/child.css">
+
+</head>
+<body>
+    <div class="top-bar">
+        <span id="date"></span> | <span id="clock"></span>
+    </div>
+    <div class="interact" >
+        <div class="main-section">
+            <div class="child-titlebar">
+                <img src="../img/icons/security.png" alt="">
+                <h2><a id="breadcrumb" href="./index.html">Segurança</a> > <a id="breadcrumb" href="./intruso.html">Configurações Deteção Intruso</a></h2>
+                <a href="../index.html" class="btn-goback">
+                    < Voltar ao Menu Principal
+                </a>
+            </div>
+            <dl id="security-intruso" style="line-height:180%">
+                <dt>
+                    Dispositivo conectado: Samsung Galaxy A7 
+                </dt>
+                <dt>
+                    <input type="checkbox" id="notify1" name="notify1" value="">     
+                    <label for="notify1"> Notificar o Dispositivo conectado por SMS  </label><br>
+                </dt>
+                <dt>
+                    <input type="checkbox" id="notify2" name="notify2" value="">     
+                    <label for="notify2"> Chamada SOS para (112)  </label><br>
+                </dt>
+                <dt>
+                    <input type="checkbox" id="notify3" name="notify3" value="">     
+                    <label for="notify3"> Alarme da Casa  </label><br>
+                </dt>
+            </dl>
+        </div>
+        
+    </div>
+
+    <!-- javascript -->
+    <script src="../js/main_behavior.js">
+    </script>
+    <script src="../js/intruder_behavior.js">
+    </script>
+    <script>
+        topbarInit();
+        startup();
+    </script>
+</body>
+</html>
