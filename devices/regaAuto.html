@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Smart House</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/child.css">
+</head>
+<body>
+    <div class="top-bar">
+        <span id="date"></span> | <span id="clock"></span>
+    </div>
+    <div class="interact" >
+        <div class="main-section">
+            <div class="child-titlebar">
+                <img src="../img/icons/devices.png" alt="">
+                <h2><a id="breadcrumb" href="./index.html">Dispositivos</a> > <a id="breadcrumb" href="regaAuto.html">Rega Automática</a></h2>
+                <a href="../index.html" class="btn-goback">
+                    < Voltar ao Menu Principal
+                </a>
+            </div>
+            <dl id="devices-irrigation-locations" style="line-height:180%">
+                <dt>
+                    Locais de Rega:
+                </dt>
+                <ul style="line-height:180%">
+                    <li id="list-items">
+                        <a href="">
+                            Jardim Frente
+                        </a>
+                    </li>
+                    <li id="list-items">
+                        <a href="">
+                            Jardim Traseiras
+                        </a>
+                    </li>
+                    <li id="list-items">
+                        <a href="./regaVaranda.html">
+                            Varanda
+                        </a>
+                    </li>
+                </ul>
+                
+            </dl>
+        </div>
+        
+    </div>
+
+    <!-- javascript -->
+    <script src="../js/main_behavior.js">
+    </script>
+    <script>
+        topbarInit();
+    </script>
+    <script src="../js/temps_behavior.js">
+    </script>
+</body>
+</html>
