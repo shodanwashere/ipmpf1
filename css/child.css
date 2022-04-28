@@ -4,20 +4,20 @@
 }
  
 .btn-goback{
-    border-radius: 8px;
-    background-color: rgba(255, 0,0, 1);
-    color: black;
-    padding: 5px;
+    border-radius: 10px;
+    background-color: #153BCE;
+    color: white;
+    padding: 10px;
     text-decoration: none;
     border: 2px solid rgba(0, 0, 0, 0.5);
     transition: background-color 0.25s, color 0.25s, border 0.25s;
-    float: right;
+    float: left;
 }
  
 .btn-goback:hover{
     color: white;
     background-color: black;
-    border: 2px solid rgba(255, 0, 0, 0.5);
+    border: 2px solid #153BCE;
      
 }
  
@@ -59,12 +59,12 @@
     padding: 10px;
     color: black;
     background-color:rgba(0, 0, 0, 0);
-    width: 20%;
+    width: auto;
 }
 
 #imaged-list-item:hover{
-    background-color: rgba(0, 0, 0, 1);
-    
+    background-color: rgb(193, 182, 182);
+    width: auto;
 }
 
 #imaged-list-item a{
@@ -82,4 +82,19 @@
 
 #temps-menu-interior > li{
     font-size: 1.2em;
+}
+
+#list-items{
+    display: block;
+    border-radius: 12px;
+    transition: background-color 0.25s;
+    padding: 10px;
+    color: black;
+    background-color:rgba(0, 0, 0, 0);
+    width: auto;
+}
+
+#list-items:hover{
+    background-color: rgb(193, 182, 182);
+    width: auto;
 }
